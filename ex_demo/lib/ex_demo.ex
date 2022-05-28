@@ -1,5 +1,5 @@
 defmodule ExDemo do
-  # sample2
+  # 02.ベクトル生成
   def ex2 do
     IO.puts "--- ex.02 ---"
 
@@ -26,4 +26,31 @@ defmodule ExDemo do
 
     nil
   end
+
+  #02.ベクトル演算
+  def ex3 do
+    IO.puts "--- ex.03 ---"
+
+    a = Nx.tensor([[1,2],[3,4]])
+    b = Nx.tensor([[10,10],[10,10]])
+    c = Nx.tensor([[2,2,2],[3,3,3]])
+
+    # a + b
+    IO.inspect(Nx.add(a,b))
+
+    # a - b
+    IO.inspect(Nx.subtract(a,b))
+
+    # a * 10
+    IO.inspect(Nx.multiply(a, 10))
+
+    # a / 2
+    IO.inspect(Nx.divide(a, 2))
+
+    # a・b
+    IO.inspect(Nx.dot(a, c))
+
+    nil
+  end
 end
+
