@@ -57,9 +57,14 @@ defmodule ExDemo.Monte do
     xxyy = Nx.add(Nx.multiply(x,x),Nx.multiply(y,y))
 
     # 要素が1.0より大きい場合は0に変換
+    # Nx.lessを利用する
     less1 = Nx.less(xxyy, 1.0)
 
-    # 1.0より小さい要素数
+    # 1.0より小さい要素数を計算
+    # Nx.reduceを利用する
+    #point = Nx.reduce(less1, 0.0, fn x, y -> Nx.add(x, y) end) |> Nx.to_flat_list |> Enum.at(0)
+
+    # Nx.sumを利用する
     point = Nx.sum(less1) |> Nx.to_flat_list |> Enum.at(0)
 
     4.0 * point / n
