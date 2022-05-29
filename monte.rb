@@ -8,7 +8,7 @@ class Monte
     diff = end_time - start_time
 
     puts("試行数:#{N}")
-    puts("計算時間:#{diff}sec")
+    puts("計算時間:#{diff}msec")
     puts("円周率:#{pi}")
   end
 
