@@ -59,12 +59,14 @@ defmodule ExDemo do
 
     # ベクトルの次元確認
     IO.inspect(Nx.shape(Nx.tensor([1,2,3])))
-    IO.inspect(Nx.shape(Nx.tensor([1,2,3],[4,5,6])))
+    IO.inspect(Nx.shape(Nx.tensor([[1,2,3],[4,5,6]])))
 
     # ランダムな要素のベクトル生成
     IO.inspect(Nx.random_uniform({2}, 0, 1, type: {:f, 32}))
     IO.inspect(Nx.random_uniform({3,3}, 0, 1, type: {:f, 32}))
     IO.inspect(Nx.random_uniform({3,3}, 0, 100, type: {:u, 8}))
+
+    nil
   end
 end
 
