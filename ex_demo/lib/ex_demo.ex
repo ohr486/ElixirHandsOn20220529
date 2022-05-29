@@ -52,5 +52,19 @@ defmodule ExDemo do
 
     nil
   end
+
+  # 03.ランダムなベクトル
+  def ex4 do
+    IO.puts "--- ex.04 ---"
+
+    # ベクトルの次元確認
+    IO.inspect(Nx.shape(Nx.tensor([1,2,3])))
+    IO.inspect(Nx.shape(Nx.tensor([1,2,3],[4,5,6])))
+
+    # ランダムな要素のベクトル生成
+    IO.inspect(Nx.random_uniform({2}, 0, 1, type: {:f, 32}))
+    IO.inspect(Nx.random_uniform({3,3}, 0, 1, type: {:f, 32}))
+    IO.inspect(Nx.random_uniform({3,3}, 0, 100, type: {:u, 8}))
+  end
 end
 
