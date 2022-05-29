@@ -34,3 +34,7 @@ $ iex -S mix
 > ExDemo.Monte.try2
 ---
 ```
+
+## APIリファレンス
+
+https://hexdocs.pm/nx/api-reference.html
