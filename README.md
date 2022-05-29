@@ -27,6 +27,9 @@ $ iex -S mix
 # 03.ベクトル演算
 > ExDemo.ex3
 
+# 04.ランダムなベクトル
+> ExDemo.ex4
+
 # 06.通常の計算
 > ExDemo.Monte.try1
 
