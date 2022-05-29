@@ -36,6 +36,7 @@ defmodule ExDemo.Monte do
     end
   end
 
+
   # nxを使った円周率計算
   def try2 do
     start_time = :os.system_time(:millisecond) # 計算開始
@@ -48,7 +49,7 @@ defmodule ExDemo.Monte do
     IO.puts("円周率:#{inspect pi}")
   end
 
-  def monte_method2(n) do
+  defp monte_method2(n) do
     x = Nx.random_uniform({n}, 0, 1, type: {:f, 32})
     y = Nx.random_uniform({n}, 0, 1, type: {:f, 32})
 
