@@ -15,7 +15,7 @@ class Monte
   def self.monte_method(n)
     point = 0
 
-    n.times.each_with_index do |i|
+    n.times.each do
       x = Random.rand
       y = Random.rand
 
