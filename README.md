@@ -14,7 +14,7 @@ https://github.com/ohr486/ElixirHandsOn20220529/wiki
 
 ## サンプルコード
 
-https://github.com/ohr486/ElixirHandsOn20220529/tree/main/ex\_demo
+https://github.com/ohr486/ElixirHandsOn20220529/tree/main/ex_demo
 
 ```
 $ mix deps.get
