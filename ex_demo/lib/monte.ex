@@ -62,10 +62,10 @@ defmodule ExDemo.Monte do
 
     # 1.0より小さい要素数を計算
     # Nx.reduceを利用する
-    #point = Nx.reduce(less1, 0.0, fn x, y -> Nx.add(x, y) end) |> Nx.to_flat_list |> Enum.at(0)
+    point = Nx.reduce(less1, 0.0, fn x, y -> Nx.add(x, y) end) |> Nx.to_flat_list |> Enum.at(0)
 
     # Nx.sumを利用する
-    point = Nx.sum(less1) |> Nx.to_flat_list |> Enum.at(0)
+    #point = Nx.sum(less1) |> Nx.to_flat_list |> Enum.at(0)
 
     4.0 * point / n
   end
